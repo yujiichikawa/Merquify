@@ -1,0 +1,7 @@
+/vendor/srmklive/paypal/tests/Mocks/samples
+# Dependências
+/vendor
+/node_modules
+# Arquivos de ambiente
+.env
+.env.*.backup
