@@ -30,7 +30,7 @@ class SettingSeeder extends Seeder
             array('id' => '25', 'key' => 'site_address', 'value' => 'address', 'created_at' => '2025-08-27 06:22:09', 'updated_at' => '2025-08-27 06:23:29'),
             array('id' => '26', 'key' => 'site_copyright', 'value' => '2025, Merquify', 'created_at' => '2025-08-27 06:22:09', 'updated_at' => '2025-08-27 06:23:29'),
             array('id' => '27', 'key' => 'site_hours', 'value' => '10:00 - 18:00, Seg - Sex', 'created_at' => '2025-08-27 06:22:09', 'updated_at' => '2025-08-27 06:23:29'),
-            array('id' => '28', 'key' => 'site_logo', 'value' => 'uploads/logov2.svg', 'created_at' => '2025-08-27 07:30:25', 'updated_at' => '2025-08-27 07:30:25'),
+            array('id' => '28', 'key' => 'site_logo', 'value' => 'uploads/logo.svg', 'created_at' => '2025-08-27 07:30:25', 'updated_at' => '2025-08-27 07:30:25'),
             array('id' => '29', 'key' => 'site_favicon', 'value' => 'uploads/favicon.ico', 'created_at' => '2025-08-27 07:30:25', 'updated_at' => '2025-08-27 07:30:25')
         );
 

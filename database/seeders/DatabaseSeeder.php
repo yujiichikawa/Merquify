@@ -36,6 +36,12 @@ class DatabaseSeeder extends Seeder
         /** Banner Ad Seeder */
         $this->call(BannerAdSeeder::class);
 
+        /** Sliders Seeder */
+        $this->call(SlidersSeeder::class);
+
+        /** Hero Banner Seeder */
+        $this->call(HeroBannerSeeder::class);
+
         /** Setting Seeder */
         $this->call(SettingSeeder::class);
 
@@ -50,6 +56,9 @@ class DatabaseSeeder extends Seeder
 
         /** Shipping Rules Seeder */
         $this->call(ShippingRulesSeeder::class);
+
+        /** Demo Product Seeder */
+        $this->call(DemoProductSeeder::class);
 
     }
 }
