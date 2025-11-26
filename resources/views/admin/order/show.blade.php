@@ -4,9 +4,9 @@
     <div class="container-xl">
         <div class="card">
             <div class="card-header d-print-none">
-                <h3 class="card-title">Order Details</h3>
+                <h3 class="card-title">Detalhes do pedido</h3>
                 <div class="card-actions">
-                    <a href="{{ route('admin.orders.index') }}" class="btn btn-primary">Back</a>
+                    <a href="{{ route('admin.orders.index') }}" class="btn btn-primary">Voltar</a>
                 </div>
             </div>
             <div class="card-body p-0">
@@ -16,7 +16,7 @@
                         <div class="container-xl">
                             <div class="row g-2 align-items-center">
                                 <div class="col">
-                                    <h2 class="page-title">Invoice</h2>
+                                    <h2 class="page-title">Fatura</h2>
                                 </div>
                                 <!-- Page title actions -->
                                 <div class="col-auto ms-auto d-print-none">
@@ -33,7 +33,7 @@
                                                 d="M7 13m0 2a2 2 0 0 1 2 -2h6a2 2 0 0 1 2 2v4a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2z">
                                             </path>
                                         </svg>
-                                        Print Invoice
+                                        Imprimir fatura
                                     </button>
                                 </div>
                             </div>
@@ -47,7 +47,7 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-6">
-                                            <p class="h3">Billing Information</p>
+                                            <p class="h3">Informações de pagamento</p>
                                             <address>
                                                 @php
                                                     $billingInfo = $order->billing_info;
@@ -64,7 +64,7 @@
                                             </address>
                                         </div>
                                         <div class="col-6 text-end">
-                                            <p class="h3">Shipping Information</p>
+                                            <p class="h3">Informações de envio</p>
                                             <address>
                                                 @if ($shippingInfo)
                                                     {{ $shippingInfo['first_name'] }} {{ $shippingInfo['last_name'] }}
@@ -88,11 +88,11 @@
                                             </address>
                                         </div>
                                         <div class="col-12 my-5">
-                                            <h1>Invoice #{{ $order->id }}</h1>
+                                            <h1>Fatura #{{ $order->id }}</h1>
                                             <div class="d-flex gap-2 flex-column">
-                                                <span>Transaction ID: {{ $order->transaction_id }}</span>
-                                                <span>Payment Method: {{ $order->payment_method }}</span>
-                                                <span>Order Date: {{ date('Y-m-d', strtotime($order->created_at)) }}</span>
+                                                <span>ID da transação: {{ $order->transaction_id }}</span>
+                                                <span>Método de pagamento: {{ $order->payment_method }}</span>
+                                                <span>Data do pedido: {{ date('Y-m-d', strtotime($order->created_at)) }}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -100,10 +100,10 @@
                                         <thead>
                                             <tr>
                                                 <th class="text-center" style="width: 1%"></th>
-                                                <th>Product</th>
-                                                <th class="text-center" style="width: 5%">Qnt</th>
-                                                <th class="text-end" style="width: 10%">Unit ({{ $order->currency }})</th>
-                                                <th class="text-end" style="width: 10%">Amount ({{ $order->currency }})
+                                                <th>Produto</th>
+                                                <th class="text-center" style="width: 5%">Qtd</th>
+                                                <th class="text-end" style="width: 10%">Unid ({{ $order->currency }})</th>
+                                                <th class="text-end" style="width: 10%">Valor ({{ $order->currency }})
                                                 </th>
                                             </tr>
                                         </thead>
@@ -134,23 +134,22 @@
                                                 <td class="text-end">{{ $subtotal }}</td>
                                             </tr>
                                             <tr>
-                                                <td colspan="4" class="strong text-end">Discount</td>
+                                                <td colspan="4" class="strong text-end">Desconto</td>
                                                 <td class="text-end">{{ $order?->discount ?? 0 }}</td>
                                             </tr>
                                             <tr>
-                                                <td colspan="4" class="strong text-end">Shipping</td>
+                                                <td colspan="4" class="strong text-end">Envio</td>
                                                 <td class="text-end">{{ $order->shipping_charge ?? 0 }}</td>
                                             </tr>
                                             <tr>
-                                                <td colspan="4" class="font-weight-bold text-uppercase text-end">Total
-                                                    Amount</td>
+                                                <td colspan="4" class="font-weight-bold text-uppercase text-end">Valor
+                                                    Total</td>
                                                 <td class="font-weight-bold text-end">{{ $order->currency }}
                                                     {{ $order->total }}</td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <p class="text-secondary text-center mt-5">Thank you very much for doing business with
-                                        us. We look forward to working with you again!</p>
+                                    <p class="text-secondary text-center mt-5">Muito obrigado por fazer negócios conosco. Esperamos trabalhar com você novamente!</p>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +161,7 @@
                                 <form action="{{ route('admin.orders.update', $order) }}" method="POST">
                                     @csrf
                                     <div class="form-group mb-2">
-                                        <label for="">Order Status</label>
+                                        <label for="">Status do pedido</label>
                                         <select name="order_status" id="" class="form-control">
                                             @foreach (config('order_status') as $key => $status)
                                                 <option @selected($order->order_status == $key) value="{{ $key }}">
@@ -170,7 +169,7 @@
                                             @endforeach
                                         </select>
                                     </div>
-                                    <button class="btn btn-primary" type="submit">Save </button>
+                                    <button class="btn btn-primary" type="submit">Salvar </button>
                                 </form>
                             </div>
                         </div>
