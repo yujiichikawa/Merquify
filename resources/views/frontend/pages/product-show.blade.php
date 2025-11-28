@@ -233,7 +233,7 @@
                                                             <div class="desc">
                                                                 <div class="d-flex justify-content-between mb-10">
                                                                     <div class="d-flex align-items-center">
-                                                                        <span class="font-xs text-muted"> {{ date('F d Y', strtotime($review->created_at)) }}</span>
+                                                                        <span class="font-xs text-muted"> {{ date('d F Y', strtotime($review->created_at)) }}</span>
                                                                     </div>
                                                                     <div class="product-rate d-inline-block">
                                                                         <div class="product-rating" style="width: {{ $review->rating * 2 }}0%">

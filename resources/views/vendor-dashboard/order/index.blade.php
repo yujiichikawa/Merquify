@@ -52,7 +52,7 @@
                                         <span class="badge bg-info-lt">{{ $order->order_status }}</span>
                                     </td>
                                     <td>
-                                        {{ date('Y-m-d', strtotime($order->created_at)) }}
+                                        {{ date('d-m-Y', strtotime($order->created_at)) }}
                                     </td>
                                     <td>
                                         <a href="{{ route('vendor.orders.show', $order) }}"

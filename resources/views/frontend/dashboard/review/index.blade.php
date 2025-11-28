@@ -40,7 +40,7 @@
                             </td>
 
                             <td>
-                                {{ date('Y-m-d', strtotime($review->created_at)) }}
+                                {{ date('d-m-y', strtotime($review->created_at)) }}
                             </td>
 
                         </tr>

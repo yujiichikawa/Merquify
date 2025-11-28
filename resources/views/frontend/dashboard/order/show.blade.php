@@ -89,7 +89,7 @@
                                             <div class="d-flex gap-2 flex-column">
                                                 <span>ID da transação: {{ $order->transaction_id }}</span>
                                                 <span>Método de pagamento: {{ $order->payment_method }}</span>
-                                                <span>Data do pedido: {{ date('Y-m-d', strtotime($order->created_at)) }}</span>
+                                                <span>Data do pedido: {{ date('d-m-Y', strtotime($order->created_at)) }}</span>
                                             </div>
                                         </div>
                                     </div>
