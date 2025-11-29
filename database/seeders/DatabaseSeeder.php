@@ -60,5 +60,8 @@ class DatabaseSeeder extends Seeder
         /** Demo Product Seeder */
         $this->call(DemoProductSeeder::class);
 
+        /** Demo Order Seeder */
+        $this->call(DemoOrderSeeder::class);
+
     }
 }

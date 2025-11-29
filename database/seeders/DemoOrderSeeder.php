@@ -12,7 +12,7 @@ class DemoOrderSeeder extends Seeder
      */
     public function run(): void
     {
-        for ($i = 1; $i <= 100; $i++) {
+        for ($i = 1; $i <= 10; $i++) {
             $date = $date = now()->startOfMonth()->addDays(rand(0, now()->daysInMonth - 1))->format('Y-m-d H:i:s');
             \DB::table('orders')->insert(
                 [
