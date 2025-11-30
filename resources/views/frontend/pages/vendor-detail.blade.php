@@ -11,7 +11,7 @@
                     <div class="product-category">
                         <span class="text-muted">Desde {{ date('Y', strtotime($store->created_at)) }}</span>
                     </div>
-                    <h3 class="mb-5 text-white"><a href="vendor-details-1.html" class="text-white">{{ $store->name }}</a>
+                    <h3 class="mb-5 text-white"><a href="#" class="text-white">{{ $store->name }}</a>
                     </h3>
                     <div class="product-rate-cover mb-15">
                         @php

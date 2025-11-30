@@ -184,7 +184,7 @@
                                         <img src="{{ asset($product->store->logo) }}" alt="" />
                                         <div class="vendor-name ml-15">
                                             <h6>
-                                                <a href="vendor-details-2.html">{{ $product->store->name }}</a>
+                                                <a href="#">{{ $product->store->name }}</a>
                                             </h6>
                                             <div class="product-rate-cover text-end">
                                                 <div class="product-rate d-inline-block">
