@@ -166,10 +166,6 @@ Route::middleware('auth:admin')
         /** Payment Setting Routes */
         Route::get('/payment-settings', [PaymentSettingController::class, 'index'])->name('payment-settings.index');
         Route::put('/paypal-settings', [PaymentSettingController::class, 'paypalSettings'])->name('paypal-settings.store');
-        Route::get('/stripe-settings', [PaymentSettingController::class, 'stripe'])->name('stripe-settings.index');
-        Route::put('/stripe-settings', [PaymentSettingController::class, 'stripeSettings'])->name('stripe-settings.store');
-        Route::get('/razorpay-settings', [PaymentSettingController::class, 'razorpay'])->name('razorpay-settings.index');
-        Route::put('/razorpay-settings', [PaymentSettingController::class, 'razorpaySettings'])->name('razorpay-settings.store');
 
         /** Order Routes */
         Route::get('/orders', [OrderController::class, 'index'])->name('orders.index');
@@ -218,9 +214,6 @@ Route::middleware('auth:admin')
 
         /** Social Link Routes */
         Route::resource('social-links', SocialLinkController::class);
-
-        /** Social Link Routes */
-        Route::resource('offer-sliders', OfferSliderController::class);
 
         /** Settings Routes */
         Route::get('/settings', [SettingController::class, 'index'])->name('settings.index');
