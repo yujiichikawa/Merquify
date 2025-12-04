@@ -1,20 +1,9 @@
 @php
     $customPages = \App\Models\CustomPage::where('is_active', true)->get();
-    $offerSliders = \App\Models\OfferSlider::where('is_active', true)->get();
 @endphp
 
 <header class="header-area header-style-1 header-style-5 header-height-2 d-print-none">
 
-
-    <div class="mobile-promotion">
-        <div id="news-flash-mobile" class="d-inline-block">
-            <ul>
-                @foreach ($offerSliders as $offerSlider)
-                    <li><a href="{{ $offerSlider->url }}" class="text-dark">{{ $offerSlider->title }}</a></li>
-                @endforeach
-            </ul>
-        </div>
-    </div>
     <div class="header-middle header-middle-ptb-1 d-none d-lg-block">
         <div class="container">
             <div class="header-wrap">

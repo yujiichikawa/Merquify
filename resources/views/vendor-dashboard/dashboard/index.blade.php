@@ -61,8 +61,8 @@
                                             <i class="ti ti-shopping-bag-exclamation"></i></span>
                                     </div>
                                     <div class="col">
-                                        <div class="font-weight-medium">{{ $pendingOrders }} Orders</div>
-                                        <div class="text-secondary">Total Pending Orders</div>
+                                        <div class="font-weight-medium">{{ $pendingOrders }} Pedidos</div>
+                                        <div class="text-secondary">Total de Pedidos Pendentes</div>
                                     </div>
                                 </div>
                             </div>
@@ -79,8 +79,8 @@
                                             <i class="ti ti-shopping-bag-heart"></i></span>
                                     </div>
                                     <div class="col">
-                                        <div class="font-weight-medium">{{ $completedOrders }} Orders</div>
-                                        <div class="text-secondary">Total Completed Orders</div>
+                                        <div class="font-weight-medium">{{ $completedOrders }} Pedidos</div>
+                                        <div class="text-secondary">Total de Pedidos Concluídos</div>
                                     </div>
                                 </div>
                             </div>
@@ -98,8 +98,8 @@
                                         </span>
                                     </div>
                                     <div class="col">
-                                        <div class="font-weight-medium">{{ $canceledOrders }} Orders</div>
-                                        <div class="text-secondary">Total Cancelled Orders</div>
+                                        <div class="font-weight-medium">{{ $canceledOrders }} Pedidos</div>
+                                        <div class="text-secondary">Total de Pedidos Cancelados</div>
                                     </div>
                                 </div>
                             </div>
@@ -116,8 +116,8 @@
                                             <i class="ti ti-shopping-bag-plus"></i></span>
                                     </div>
                                     <div class="col">
-                                        <div class="font-weight-medium">{{ $totalOrders }} Orders</div>
-                                        <div class="text-secondary">Total Orders</div>
+                                        <div class="font-weight-medium">{{ $totalOrders }} Pedidos</div>
+                                        <div class="text-secondary">Total de Pedidos</div>
                                     </div>
                                 </div>
                             </div>
@@ -134,8 +134,8 @@
                                             <i class="ti ti-box"></i></span>
                                     </div>
                                     <div class="col">
-                                        <div class="font-weight-medium">{{ $totalProducts }} Items</div>
-                                        <div class="text-secondary">Total Products</div>
+                                        <div class="font-weight-medium">{{ $totalProducts }} Itens</div>
+                                        <div class="text-secondary">Total de Produtos</div>
                                     </div>
                                 </div>
                             </div>
@@ -152,8 +152,8 @@
                                             <i class="ti ti-box"></i></span>
                                     </div>
                                     <div class="col">
-                                        <div class="font-weight-medium">{{ $totalDigitalProducts }} Items</div>
-                                        <div class="text-secondary">Total Digital Products</div>
+                                        <div class="font-weight-medium">{{ $totalDigitalProducts }} Itens</div>
+                                        <div class="text-secondary">Produtos Digitais</div>
                                     </div>
                                 </div>
                             </div>
@@ -169,8 +169,8 @@
                                             <i class="ti ti-box"></i></span>
                                     </div>
                                     <div class="col">
-                                        <div class="font-weight-medium">{{ $totalPhysicalProducts }} Items</div>
-                                        <div class="text-secondary">Total Physical Products</div>
+                                        <div class="font-weight-medium">{{ $totalPhysicalProducts }} Itens</div>
+                                        <div class="text-secondary">Produtos Físicos</div>
                                     </div>
                                 </div>
                             </div>

@@ -15,8 +15,8 @@
                                             <i class="ti ti-shopping-bag-exclamation"></i></span>
                                     </div>
                                     <div class="col">
-                                        <div class="font-weight-medium">{{ $pendingOrders }} Orders</div>
-                                        <div class="text-secondary">Total Pending Orders</div>
+                                        <div class="font-weight-medium">{{ $pendingOrders }} Pedidos</div>
+                                        <div class="text-secondary">Total de pedidos pendentes</div>
                                     </div>
                                 </div>
                             </div>
@@ -33,8 +33,8 @@
                                             <i class="ti ti-shopping-bag-heart"></i></span>
                                     </div>
                                     <div class="col">
-                                        <div class="font-weight-medium">{{ $completedOrders }} Orders</div>
-                                        <div class="text-secondary">Total Completed Orders</div>
+                                        <div class="font-weight-medium">{{ $completedOrders }} Pedidos</div>
+                                        <div class="text-secondary">Total de pedidos concluídos</div>
                                     </div>
                                 </div>
                             </div>
@@ -52,8 +52,8 @@
                                         </span>
                                     </div>
                                     <div class="col">
-                                        <div class="font-weight-medium">{{ $canceledOrders }} Orders</div>
-                                        <div class="text-secondary">Total Cancelled Orders</div>
+                                        <div class="font-weight-medium">{{ $canceledOrders }} Pedidos</div>
+                                        <div class="text-secondary">Total de pedidos cancelados</div>
                                     </div>
                                 </div>
                             </div>
@@ -70,8 +70,8 @@
                                             <i class="ti ti-shopping-bag-plus"></i></span>
                                     </div>
                                     <div class="col">
-                                        <div class="font-weight-medium">{{ $totalOrders }} Orders</div>
-                                        <div class="text-secondary">Total Orders</div>
+                                        <div class="font-weight-medium">{{ $totalOrders }} Pedidos</div>
+                                        <div class="text-secondary">Total de pedidos</div>
                                     </div>
                                 </div>
                             </div>
@@ -88,8 +88,8 @@
                                             <i class="ti ti-box"></i></span>
                                     </div>
                                     <div class="col">
-                                        <div class="font-weight-medium">{{ $totalProducts }} Items</div>
-                                        <div class="text-secondary">Total Products</div>
+                                        <div class="font-weight-medium">{{ $totalProducts }} Itens</div>
+                                        <div class="text-secondary">Total de produtos</div>
                                     </div>
                                 </div>
                             </div>
@@ -106,8 +106,8 @@
                                             <i class="ti ti-box"></i></span>
                                     </div>
                                     <div class="col">
-                                        <div class="font-weight-medium">{{ $totalPendingProducts }} Items</div>
-                                        <div class="text-secondary">Total Pending Products</div>
+                                        <div class="font-weight-medium">{{ $totalPendingProducts }} Itens</div>
+                                        <div class="text-secondary">Total de produtos pendentes</div>
                                     </div>
                                 </div>
                             </div>
@@ -123,8 +123,8 @@
                                             <i class="ti ti-box"></i></span>
                                     </div>
                                     <div class="col">
-                                        <div class="font-weight-medium">{{ $totalApprovedProducts }} Items</div>
-                                        <div class="text-secondary">Total Approved Products</div>
+                                        <div class="font-weight-medium">{{ $totalApprovedProducts }} Itens</div>
+                                        <div class="text-secondary">Total de produtos aprovados</div>
                                     </div>
                                 </div>
                             </div>
@@ -140,8 +140,8 @@
                                             <i class="ti ti-box"></i></span>
                                     </div>
                                     <div class="col">
-                                        <div class="font-weight-medium">{{ $totalRejectedProducts }} Items</div>
-                                        <div class="text-secondary">Total Rejected Products</div>
+                                        <div class="font-weight-medium">{{ $totalRejectedProducts }} Itens</div>
+                                        <div class="text-secondary">Total de produtos rejeitados</div>
                                     </div>
                                 </div>
                             </div>
@@ -158,7 +158,7 @@
                                     </div>
                                     <div class="col">
                                         <div class="font-weight-medium">{{ $totalPendingKycRequests }} Kyc's</div>
-                                        <div class="text-secondary">Total Pending Requests</div>
+                                        <div class="text-secondary">Total de solicitações pendentes</div>
                                     </div>
                                 </div>
                             </div>
@@ -175,7 +175,7 @@
                                     </div>
                                     <div class="col">
                                         <div class="font-weight-medium">{{ $totalApprovedKycRequests }} Kyc's</div>
-                                        <div class="text-secondary">Total Approved Requests</div>
+                                        <div class="text-secondary">Total de solicitações aprovadas</div>
                                     </div>
                                 </div>
                             </div>
@@ -192,7 +192,7 @@
                                     </div>
                                     <div class="col">
                                         <div class="font-weight-medium">{{ $totalRejectedKycRequests }} Kyc's</div>
-                                        <div class="text-secondary">Total Rejected Requests</div>
+                                        <div class="text-secondary">Total de solicitações rejeitadas</div>
                                     </div>
                                 </div>
                             </div>
@@ -209,7 +209,7 @@
                                     </div>
                                     <div class="col">
                                         <div class="font-weight-medium">{{ $totalKycRequests }} Kyc's</div>
-                                        <div class="text-secondary">Total Requests</div>
+                                        <div class="text-secondary">Total de solicitações</div>
                                     </div>
                                 </div>
                             </div>
@@ -226,7 +226,7 @@
                     <div class="col-lg-8">
                         <div class="card">
                             <div class="card-header">
-                                <h3>Analytics</h3>
+                                <h3>Análise</h3>
 
                                 <div class="card-actions">
                                     <form action="">
@@ -248,7 +248,7 @@
                     <div class="col-lg-4">
                         <div class="card">
                             <div class="card-header">
-                                <h3>Sales & Revenue ({{ date('Y') }})</h3>
+                                <h3>Vendas & Receita ({{ date('Y') }})</h3>
                             </div>
 
                             <div class="card-body " style="padding-top:40px; padding-bottom:73px">
@@ -264,7 +264,7 @@
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-header">
-                                <h3>Pending Kyc's</h3>
+                                <h3>Kyc's Pendentes</h3>
                             </div>
                             <div class="card-body">
                                 <div class="divide-y">
@@ -292,7 +292,7 @@
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-header">
-                                <h3>Pending Orders</h3>
+                                <h3>Pedidos Pendentes</h3>
                             </div>
                             <div class="card-body">
                                 <div class="divide-y">
@@ -320,7 +320,7 @@
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-header">
-                                <h3>Pending Products</h3>
+                                <h3>Produtos Pendentes</h3>
                             </div>
                             <div class="card-body">
                                 <div class="divide-y">
@@ -364,15 +364,15 @@
                 type: 'line'
             },
             series: [{
-                name: "Orders",
+                name: "Pedidos",
                 type: 'column',
                 data: @json($ordersData)
             }, {
-                name: "Total Amount",
+                name: "Valor Total",
                 type: 'line',
                 data: @json($amountData)
             }, {
-                name: "Commission",
+                name: "Comissão",
                 type: 'line',
                 data: @json($commissionData)
             }],
@@ -380,9 +380,9 @@
                 categories: @json($dates)
             },
             yaxis: [{
-                    seriesName: "Orders",
+                    seriesName: "Pedidos",
                     title: {
-                        text: "Orders"
+                        text: "Pedidos"
                     },
                     labels: {
                         formatter: function(val) {
@@ -391,10 +391,10 @@
                     }
                 },
                 {
-                    seriesName: "Total Amount",
+                    seriesName: "Valor Total",
                     opposite: true, // shows on right side
                     title: {
-                        text: "Total Amount"
+                        text: "Valor Total"
                     },
                     labels: {
                         formatter: function(val) {
@@ -403,7 +403,7 @@
                     }
                 },
                 {
-                    seriesName: "Commission",
+                    seriesName: "Comissão",
                     opposite: true,
                     show: false // hide axis (shares same scale as Total Amount)
                 }
@@ -436,7 +436,7 @@
                 width: 400
             },
             series: [{{ $totalSales }}, {{ $totalCommission }}],
-            labels: ['Total Sales (Orders)', 'Revenue (Commission)'],
+            labels: ['Total de Vendas (Pedidos)', 'Receita (Comissão)'],
             colors: ['#008FFB', '#00E396'],
             legend: {
                 position: 'bottom'

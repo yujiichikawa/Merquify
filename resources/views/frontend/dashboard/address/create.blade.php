@@ -146,10 +146,7 @@
                         <div class="col-md-3">
                             <div class="form-group">
                                 <select name="country" class="form-control select-active" id="">
-                                    <option value="">País</option>
-                                    @foreach (config('countries') as $country)
-                                        <option value="{{ $country }}">{{ $country }}</option>
-                                    @endforeach
+                                    <option value="Brazil" selected>Brazil</option>
                                 </select>
                                 <x-input-error :messages="$errors->get('country')" class="mt-2" />
                             </div>
