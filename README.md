@@ -17,7 +17,6 @@
 
 - Autenticação multi-role 
 - Sistema de gestão de produtos
-- Aplicação de cupons 
 - Avaliação e classificação de produtos  
 - Integração com gateway de pagamento  
 - Carrinho e checkout  
@@ -27,7 +26,7 @@
 ---
 
 ## 📚 Roadmap de Funcionalidades Futuras
-
+- Aplicação de cupons 
 - Implementar sistema de retirada de pagamento para vendedores  
 - Módulo de devolução / reembolso de pedidos  
 
