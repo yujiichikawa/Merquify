@@ -297,6 +297,7 @@
                               </div>
                           </div>
                       </li>
+                      {{--
                       <li
                           class="nav-item dropdown {{ setActive(['vendor.withdraw-methods.*', 'vendor.withdraw-requests.*'], 'active') }}">
                           <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
@@ -326,6 +327,7 @@
                               </div>
                           </div>
                       </li>
+                    --}}
                       <li class="nav-item">
                           <a class="nav-link {{ setActive(['vendor.store-profile.index'], 'active') }}"
                               href="{{ route('vendor.store-profile.index') }}">

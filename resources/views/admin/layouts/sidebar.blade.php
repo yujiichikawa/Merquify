@@ -416,12 +416,14 @@
                                               Flash Sales
                                           </a>
                                       </div>
+                                      {{--
                                       <div class="dropdown-menu-column">
                                           <a class="dropdown-item {{ setActive(['admin.coupons.*']) }}"
                                               href="{{ route('admin.coupons.index') }}">
                                               Coupons
                                           </a>
                                       </div>
+                                      --}}
                                       <div class="dropdown-menu-column">
                                           <a class="dropdown-item {{ setActive(['admin.shipping-rules.*']) }}"
                                               href="{{ route('admin.shipping-rules.index') }}">
@@ -502,7 +504,7 @@
                           </li>
                       @endif
 
-
+                    {{--
                       @if (hasPermission(['Withdraw Management']))
                           <li
                               class="nav-item dropdown {{ setActive(['admin.withdraw-methods.*', 'admin.withdraw-requests.*']) }}">
@@ -534,7 +536,7 @@
                               </div>
                           </li>
                       @endif
-
+                    --}}
 
                       @if (hasPermission(['Page Management']))
                           <li class="nav-item">

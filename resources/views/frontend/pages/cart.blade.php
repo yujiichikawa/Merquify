@@ -112,6 +112,7 @@
             </div>
             <div class="col-xl-4">
                 @if(cartCount() > 0)
+                {{--
                 <div class="p-40">
                     <h4 class="mb-10">Aplicar cupom</h4>
                     <p class="mb-30"><span class="font-lg text-muted">Usar um código promocional?</p>
@@ -130,6 +131,7 @@
                         </div>
                     </form>
                 </div>
+                --}}
                 @endif
                 <div class="border p-md-4 cart-totals ml-30">
                     <div class="table-responsive">
