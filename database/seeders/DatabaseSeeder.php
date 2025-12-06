@@ -63,5 +63,9 @@ class DatabaseSeeder extends Seeder
         /** Demo Order Seeder */
         $this->call(DemoOrderSeeder::class);
 
+        /** Custom Pages Seeder */
+        $this->call(CustomPagesSeeder::class);
+
+
     }
 }
